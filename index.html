@@ -95,33 +95,37 @@
     <div id = "download">
       <img src = "bbcedit.png" />
       <table><tr><td>
-        <div>BBCEdit Version 0.34.0</div>
-        <a target = "_blank" href = "BBCEdit-0.34.0.zip">Download</a>
+        <div>BBCEdit Version 0.34.1</div>
+        <a target = "_blank" href = "BBCEdit-0.34.1.zip">Download</a>
       </td></tr></table>
     </div>
    
    <div id = "changes">
       
-      <h1>0.34.0</h1>
+      <h1>0.34.1</h1>
       <h2>New Features</h2>
       <ul>
+        <li>Added ability to inspect the character values of the text-rendition of the program line being edited. Select a single character in the normal way (perhaps with Shift+Right-Arrow) then use Ctrl-Left/Right-Arrow to traverse the edit line text. Pertinent information is displayed in the status bar. Use Ctrl-Page Up/Down to increment/decrement the value of the selected character.</li>
         <li>Added option to purge broken links from the recent files list.</li>
-        <li>Added option to check for possible UTF-8 encoding and corrupted strings/comments when loading a program.</li>
         <li>Added option to disable syntax colouring (might give a slight performance boost on slow systems).</li>
+        <li>Added warning when running BBCEdit under BB4W, when a program is loaded that has strings containing the control characters that are not part of the ANSI character set. BBCEdit currently has no work-around for dealing elegantly with these characters in the event that PRINT/VDU can't automatically print a dummy character in their place.</li> 
       </ul>
        <h2>Cosmetic</h2>
       <ul>
         <li>Changed .BBC file icon to something more recognisable using the icon supplied with BBCSDL.</li>
+        <li>When running BBCEdit under BB4W and the DejaVuMono font is not installed, BBCEdit defaults to Courier New.</li>
       </ul>
       <h2>Bug Fixes</h2>
       <ul>
         <li>IMPORTANT! Fixed tokenise routine so that it does not corrupt line continuation comments that contain a period.
-        <li>IMPORTANT! Fixed comments not being de-tokenised correctly, resulting in data corruption when comments contained ANSI/UTF-8 characters and one or more of the bytes in the character encoding matched a keyword byte token.</li>
+        <li>IMPORTANT! Fixed comments not being de-tokenised correctly, resulting in data corruption when comments contained UTF-8 encoded characters.</li>
         <li>Fixed edit line changes being forgotten when opening the function list or making a 'Go To...' jump.</li>
         <li>Fixed 'Go To...' dialogue not opening after a line selection.</li>
         <li>Fixed variable names beginning with 'DEF' ending up in the function list.</li>
         <li>Fixed line indentation not responding when certain changes were made, followed by cursor key up or down.</li>
         <li>Fixed bug that prevented data recovery from working properly on next launch following a fatal error.</li>
+        <li>Fixed indentation problem exposed by Ceefax.bbc.</li>
+        <li>Fixed F1 key regression.</li>
       </ul>
       
       <h1>0.33.0</h1>
