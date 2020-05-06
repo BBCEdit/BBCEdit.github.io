@@ -118,7 +118,7 @@
       <h2>Bug Fixes</h2>
       <ul>
         <li>IMPORTANT! Fixed tokenise routine so that it does not corrupt line continuation comments that contain a period.
-        <li>IMPORTANT! Fixed comments not being de-tokenised correctly, resulting in data corruption when comments contained UTF-8 encoded characters.</li>
+        <li>IMPORTANT! Fixed comments not being de-tokenised correctly, resulting in data corruption when comments contained character codes that corresponded with keyword tokens.</li>
         <li>Fixed edit line changes being forgotten when opening the function list or making a 'Go To...' jump.</li>
         <li>Fixed 'Go To...' dialogue not opening after a line selection.</li>
         <li>Fixed variable names beginning with 'DEF' ending up in the function list.</li>
