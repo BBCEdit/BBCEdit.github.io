@@ -110,10 +110,6 @@
         <li>Added option for limited single-line bracket matching.</li>
         <li>Added option to preserve line indent as white space when using the Add REMs function.</li>
       </ul>
-       <h2>Cosmetic</h2>
-      <ul>
-        <li>Changed character used to indicate that a menu item is 'ticked'.</li>
-      </ul>
       <h2>Bug Fixes</h2>
       <ul>
         <li>IMPORTANT! Fixed tokenise routine (again) so that keywords that follow a string that contains a backslash are tokenised. This bug was possibly a regression caused by previously fixing a related bug.</li>
@@ -127,6 +123,10 @@
         <li>Significant changes to file and directory handling to improve compatibility across platforms, and to reduce (hopefully prevent) instances of files or directories that should be accessible, not being so from the load/save dialogues.</li>
         <li>Significant code restructuring and some streamlining, leading to the removal of stringmod.bbc, arraymod.bbc, and dirmod.bbc.</li>
       </ul>
+      <h2>Cosmetic</h2>
+      <ul>
+        <li>Changed character used to indicate that a menu item is 'ticked'.</li>
+      </ul>
       
       
       
@@ -137,11 +137,6 @@
         <li>Added option to purge broken links from the recent files list.</li>
         <li>Added option to disable syntax colouring (might give a slight performance boost on slow systems).</li>
         <li>Added warning when running BBCEdit under BB4W, when a program is loaded that has strings containing the control characters that are not part of the ANSI character set. BBCEdit currently has no work-around for dealing elegantly with these characters in the event that PRINT/VDU can't automatically print a dummy character in their place.</li> 
-      </ul>
-       <h2>Cosmetic</h2>
-      <ul>
-        <li>Changed .BBC file icon to something more recognisable using the icon supplied with BBCSDL.</li>
-        <li>When running BBCEdit under BB4W and the DejaVuMono font is not installed, BBCEdit defaults to Courier New.</li>
       </ul>
       <h2>Bug Fixes</h2>
       <ul>
@@ -154,6 +149,11 @@
         <li>Fixed bug that prevented data recovery from working properly on next launch following a fatal error.</li>
         <li>Fixed indentation problem exposed by Ceefax.bbc.</li>
         <li>Fixed F1 key regression.</li>
+      </ul>
+      <h2>Cosmetic</h2>
+      <ul>
+        <li>Changed .BBC file icon to something more recognisable using the icon supplied with BBCSDL.</li>
+        <li>When running BBCEdit under BB4W and the DejaVuMono font is not installed, BBCEdit defaults to Courier New.</li>
       </ul>
       
       
