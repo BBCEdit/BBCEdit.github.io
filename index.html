@@ -95,12 +95,40 @@
     <div id = "download">
       <img src = "bbcedit.png" />
       <table><tr><td>
-        <div>BBCEdit Version 0.34.2</div>
-        <a target = "_blank" href = "BBCEdit-0.34.2.zip">Download</a>
+        <div>BBCEdit Version 0.35.0</div>
+        <a target = "_blank" href = "BBCEdit-0.35.0.zip">Download</a>
       </td></tr></table>
     </div>
    
    <div id = "changes">
+      
+      
+      
+      <h1>0.35.0</h1>
+      <h2>New Features</h2>
+      <ul>
+        <li>Added option for limited single-line bracket matching.</li>
+        <li>Added option to preserve line indent as white space when using the Add REMs function.</li>
+      </ul>
+       <h2>Cosmetic</h2>
+      <ul>
+        <li>Changed character used to indicate that a menu item is 'ticked'.</li>
+      </ul>
+      <h2>Bug Fixes</h2>
+      <ul>
+        <li>IMPORTANT! Fixed tokenise routine (again) so that keywords that follow a string that contains a backslash are tokenised. This bug was possibly a regression caused by previously fixing a related bug.</li>
+        <li>When using 'Page Down' at the end of the program, the editor no longer overshoots the program.</li>
+        <li>The relative position of the currently edited line no longer jumps to the top of the editing pane when using Page-Up or Page-Down.</li>
+        <li>The main tool-bar updates (where previously it did not) when REMs are added, removed or inverted using the tool-bar.</li>
+        <li>Fixed the ANSII/character byte edit feature to correctly prevent characters outside of strings and comments being edited.</li>
+      </ul>
+      <h2>Structural</h2>
+      <ul>
+        <li>Significant changes to file and directory handling to improve compatibility across platforms, and to reduce (hopefully prevent) instances of files or directories that should be accessible, not being so from the load/save dialogues.</li>
+        <li>Significant code restructuring and some streamlining, leading to the removal of stringmod.bbc, arraymod.bbc, and dirmod.bbc.</li>
+      </ul>
+      
+      
       
       <h1>0.34.2</h1>
       <h2>New Features</h2>
@@ -128,6 +156,8 @@
         <li>Fixed F1 key regression.</li>
       </ul>
       
+      
+      
       <h1>0.33.0</h1>
       <h2>New Features</h2>
       <ul>
@@ -139,6 +169,8 @@
       <ul>
         <li>Recent files list now stored in _options.ini</li>
       </ul>
+      
+      
       
       <h1>0.32.4</h1>
       <h2>Bug Fixes</h2>
@@ -153,6 +185,8 @@
         <li>Minor streamlining of code, including the removal of the file load progress dialogue.</li>
       </ul>
       
+      
+      
       <h1>0.32.3</h1>
       <h2>New Features</h2>
       <ul>
@@ -165,6 +199,8 @@
         <li>BBCEdit program files moved into 'BBCEdit' folder to minimise footprint in the BBC BASIC for SDL tools/ folder.</li>
         <li>Changed from .dat to .ini to store program configuration.</li>
       </ul>
+      
+      
       
    </div>
     
