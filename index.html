@@ -96,12 +96,25 @@
     <div id = "download">
       <img src = "bbcedit.png" />
       <table><tr><td>
-        <div>BBCEdit Version 0.37.2</div>
-        <a target = "_blank" href = "BBCEdit-0.37.2.zip">Download</a>
+        <div>BBCEdit Version 0.38.0</div>
+        <a target = "_blank" href = "BBCEdit-0.38.0.zip">Download</a>
       </td></tr></table>
     </div>
    
    <div id = "changes">
+      
+      <h1>0.38.0</h1>
+      <h2>New Features</h2>
+      <ul>
+        <li>Floating tool-tips added to some button bars. The design of the file dialogue leaves a lot to be desired, and like much of BBCEdit, it is a legacy of an early phase of design in which the original intention was to make an editor more akin to something like Nano (on Linux). As BBCSDL evolved, BBCEdit tried to become something that might work equally well on touch-screen devices, before finally resolving to become an editor with a familiar desktop GUI. Through this process, rather than redesigning BBCEdit from scratch, many features have been retained and new ones shoehorned-in with some compromises. One such compromise was the introduction of customisable "places" represented by buttons at the bottom of the file dialogue. To make these buttons less awkward to use, they now display floating tool-tips showing the directory path that each one represents. This floating tool-tip functionality has also been extended to the function list button bar.</li>
+      </ul>
+      <h2>Bug Fixes</h2>
+      <ul>
+        <li>IMPORTANT! When saving a program using the Save As dialogue, and when no extension (.BBC or .BAS) is specified, the appropriate extension is appended to the given filename automatically without corrupting the original filename or the program content. -- Thanks to Steve Waddicor for spotting this!</li>
+        <li>When a block (one or more lines) of text are highlighted, the behaviour of the up and down arrow has been changed to a more conventional behaviour. Up arrow will deselect the block and place the cursor at the start of the previously selected block. Down arrow will deselect the block and place the cursor at the end of the previously selected block.</li>
+      </ul>
+      
+      
       
       <h1>0.37.2</h1>
       <h2>New Features</h2>
@@ -117,8 +130,10 @@
         <li>Behaviour of Home and End has been corrected.</li>
         <li>Horizontal scrolling works when text is drag-selected beyond the bounds of the text area.</li>
         <li>Go Back works correctly after dragging the vertical scroll bar to a new position.</li>
-        <li>Fixed a bug introduced in version 0.35.0, which caused significant delays when reading directories with large numbers of files.</li>
+        <li>Fixed a bug introduced in version 0.35.0, which caused significant delays when reading directories with large numbers of files on BBCSDL for Win32.</li>
       </ul>
+      
+      
       
       <h1>0.36.2</h1>
       <h2>New Features</h2>
