@@ -96,12 +96,33 @@
     <div id = "download">
       <img src = "bbcedit.png" />
       <table><tr><td>
-        <div>BBCEdit Version 0.39.0</div>
-        <a target = "_blank" href = "BBCEdit-0.39.0.zip">Download</a>
+        <div>BBCEdit Version 0.40.0</div>
+        <a target = "_blank" href = "BBCEdit-0.40.0.zip">Download</a>
       </td></tr></table>
     </div>
    
    <div id = "changes">
+      
+      <h1>0.40.0</h1>
+      <h2>New Features</h2>
+      <ul>
+        <li>Support for Alt Gr ANSI characters.</li>
+        <li>ANSI character context menu.</li>
+      </ul>
+      <h2>Bug Fixes</h2>
+      <ul>
+        <li>Cursor is positioned correctly when editing an x-position greater than 127 characters. This applied when running on BBC BASIC for SDL 2.0 Linux Edition, which at the time of writing (and unlike the Windows Edition) treats the values given to TAB(x,y) as signed bytes.</li>
+        <li>Fixed status bar help text for Help menu.</li>
+        <li>Tinkered with some graphics that were not pixel perfect.</li>
+      </ul>
+      <h2>Cosmetic</h2>
+      <ul>
+        <li>The light colour scheme has been improved.</li>
+        <li>Empty DEF line colour change in function menu.</li>
+        <li>Change of syntax highlighting for ENDPROC and :=</li>
+      </ul>
+      
+      
       
       <h1>0.39.0</h1>
       <h2>New Features</h2>
@@ -112,6 +133,8 @@
       <ul>
         <li>Does not needlessly bring up a command window when running a program under BBCSDL for Windows.</li>
       </ul>
+      
+      
       
       <h1>0.38.1</h1>
       <h2>New Features</h2>
